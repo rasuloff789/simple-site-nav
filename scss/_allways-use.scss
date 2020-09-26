@@ -1,0 +1,36 @@
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+  
+  &::before,
+  &::after{
+    box-sizing: inherit;
+  }
+}
+body{
+  font-family:"Arial","Helvetica", sans-serif;
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex-grow: 1;
+}
+.visually-hidden{
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
